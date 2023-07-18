@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    border: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Trirong", serif;
+    color: #3C354F;
+}
+.btn-primary{
+    background-color: #ff42a5;;
+    padding: 1.1rem 2rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border: #ff42a5;;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+.title{
+    display: flex;
+    justify-content:center;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.title-content{
+    margin: 10px auto;
+    text-align: center;
+}
+/* navbar css */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 10px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 5rem;
+    height: 2.5rem;
+}
+.nav-title{
+    padding: 10px;
+    font-size: 2rem;
+}
+.nav-title>span{
+    color: #ff42a5;
+}
+.nav-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item li{
+    list-style: none;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+.nav-item li a{
+    text-decoration: none;
+    color: #3C354F;
+}
+.nav-button{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.icon{
+    width: 50px;
+    height: 30px;
+}
+
+/* css banner section */
+.banner-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 30px 40px; */
+    background-image: url('../images/Group-14.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-bottom: 20px;
+}
+.banner-content {
+    padding: auto;
+}
+.banner-content h3{
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-content h1{
+    text-align: center;
+    font-size: 5.9375rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-content ul{
+    margin-bottom: 20px;
+}
+.banner-content ul li{
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+.banner-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-image img{
+    width: 30rem;
+}
+.go-rogue-btn{
+    background: #4EC5F7;
+}
+
+/* funny video section */
+.section-funny-video{
+    margin: 60px;
+}
+.title span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* mobile version css */
+@media screen and (max-width: 576px){
+
+    nav{
+        flex-direction: column;
+    }
+    .nav-logo{
+        margin-bottom: 20px;
+    }
+    .nav-title{
+        padding-right: -30px;
+    }
+    .nav-item{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .nav-item li{
+        margin-bottom: 20px;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-position-y: bottom;
+    }
+    /* .banner-content h3{
+        font-size: 2rem;
+    }
+    .banner-content h1{
+        font-size: 3.9375rem;
+    } */
+    .banner-image img{
+        text-align: center;
+        width: calc(100% - 20%);
+        /* padding: 30px; */
+        margin: 20px 10%;
+    }
+    .banner-content{
+        margin-bottom: 20px;
+    }
+}
