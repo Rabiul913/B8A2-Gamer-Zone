@@ -156,18 +156,45 @@ nav{
 
 .content-card{
     width: 220px; 
-    cursor: pointer;
+    cursor: pointer;    
+ 
 }
 .content-card img{
     width: 100%; 
+    height: 20vw;
 
 }
-.content-card img:hover{
-    border: 2px solid #ff42a5;
-    border-radius: 15px;
+.content-card .img-overlay{
+    position: relative;
+    overflow: hidden; 
 }
 .content-card p{
     padding: 10px 0px;
+}
+
+.img-overlay .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98.5%; 
+    height: 20vw;
+    background-color: rgba(0, 0, 0, 0.6); /* Customize overlay color and opacity */
+    color: #fff; /* Text color on the overlay */
+    /* padding: 20px; */
+    opacity: 0;
+    border: 2px solid #ff42a5;
+    border-radius: 10px;
+    transition: opacity 0.3s ease; /* Add a smooth transition on hover */
+}
+.img-overlay:hover .overlay {
+    opacity: 1;
+}
+.overlay img{
+    width: 50px;
+    height: 50px;
 }
 
 /* play section css */
@@ -211,8 +238,9 @@ nav{
 
 /* game type section css */
 .section-game-type{
+    margin-top: 50px;
     padding: 20px 100px;
-    height: 40vh;
+    min-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,12 +268,42 @@ nav{
     border: 1px solid #ff42a5;
     padding: 10px;
     border-radius: 40px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .game-type-content{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 20px;
-    /* margin: 0 auto; */
+    gap: 20px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* footer css */
+footer{
+    background: #0B0223;
+    height: 20rem;
+    padding: 100px;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+.footer-nav li{
+    list-style: none;
+    margin: 20px;
+    cursor: pointer;
 }
 
 /* mobile version css */
@@ -287,11 +345,21 @@ nav{
     }
     .content-card{
         width: 100%; 
-        cursor: pointer;
-    }
+        cursor: pointer;    
+    }     
     .content-card img{
-        width: 100%;     
+        width: 100%;    
+        height: 60vw; 
     }
+    .img-overlay .overlay {
+        width: 98.5%;
+        height: 60vw;        
+    }
+    .overlay img{
+        width: 50px;
+        height: 50px;
+    }
+
     .section-play{
         flex-direction: column-reverse;
         margin: 10px;
@@ -316,10 +384,12 @@ nav{
     .section-game-type{
         padding: 20px;
     }
-    .game-type-content{
-        grid-template-columns: repeat(3,1fr);
-        gap: 5px;
-        margin: 5px;
+
+    .footer-nav{        
+        flex-wrap: wrap;
+    }
+    .footer-nav li{
+        margin: 10px;
     }
 
 }
@@ -371,9 +441,17 @@ nav{
         cursor: pointer;
     }
     .content-card img{
-        width: 100%;     
+        width: 100%;    
+        height: 40vw; 
     }
-
+    .img-overlay .overlay {
+        width: 99%;
+        height: 40vw;        
+    }
+    .overlay img{
+        width: 60px;
+        height: 60px;
+    }
     
     .section-play{
         flex-direction: column-reverse;
@@ -397,9 +475,9 @@ nav{
     .section-game-type{
         padding: 20px;
     }
-    .game-type-content{
-        grid-template-columns: repeat(3,1fr);
-        gap: 10px;
-        margin: 0px 30px;
+
+    .footer-nav{        
+        flex-wrap: wrap;
     }
+    
 }
