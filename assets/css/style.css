@@ -313,7 +313,7 @@ nav{
 .footer-icon img{
     margin: 20px;
     width: 2rem;
-
+    cursor: pointer;
 }
 
 .footer-others,.copyright{
