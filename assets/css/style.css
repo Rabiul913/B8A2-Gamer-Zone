@@ -285,7 +285,7 @@ nav{
 /* footer css */
 .footer{
     background: #0B0223;
-    height: 20rem;
+    height: 18rem;
     padding: 100px;
 }
 
@@ -324,11 +324,7 @@ nav{
 .footer-others li{
     margin: 20px 20px;
 }
-/* .copyright{
-    color: rgba(255, 255, 255, 0.60);
-    display: flex;
-    justify-content: center;
-} */
+
 /* mobile version css */
 @media screen and (max-width: 576px){
     nav{
