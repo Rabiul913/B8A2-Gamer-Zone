@@ -26,6 +26,7 @@ body{
     justify-content:center;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
 
 }
 .title-content{
@@ -353,6 +354,7 @@ nav{
         flex-direction: column;
         margin-top: 10px;
     }
+
     .nav-item li{
         margin-bottom: 20px;
     }
