@@ -407,13 +407,14 @@ nav{
         width: 100%;
         max-width: 250px;
         margin-top: 20px;
+        margin-right: -100px;
     }
 
     .badge-image {
         width: 100px;
         position: relative;
         bottom: -60px;
-        right: 86%;
+        right: 80%;
         margin-bottom: 20px;
         padding-bottom: 0;
     }
@@ -513,13 +514,14 @@ nav{
         width: 100%;
         max-width: 300px;
         margin-top: 20px;
+        margin-right: -120px;
     }
 
     .badge-image {
-        width: 100px;
+        width: 120px;
         position: relative;
         bottom: -60px;
-        right: 88%;
+        right: 80%;
         margin-bottom: 20px;
         padding-bottom: 0;
     }
