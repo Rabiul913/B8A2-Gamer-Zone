@@ -363,7 +363,6 @@ nav{
         flex-direction: column-reverse;
         justify-content: center;
         background-position: bottom left;
-        padding: 20px;
     }
 
     .banner-image img{
@@ -373,7 +372,7 @@ nav{
         margin: 20px 10%;
     }
     .banner-content{
-        margin-bottom: 20px;
+        padding: 30px;
     }
     .funny-video-content{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -479,7 +478,6 @@ nav{
         flex-direction: column-reverse;
         justify-content: center;
         background-position-y: bottom;
-        padding: 30px;
     }
 
     .banner-image img{
@@ -488,7 +486,7 @@ nav{
         margin: 20px 10%;
     }
     .banner-content{
-        margin-bottom: 20px;
+        padding: 40px 10px;
     }
     .funny-video-content{
         grid-template-columns: repeat(1,1fr);
