@@ -321,12 +321,14 @@ nav{
     display: flex;
     justify-content: center;
 }
+
 .footer-others li{
     margin: 20px 20px;
 }
 
-/* mobile version css */
+/* Mobile version css */
 @media screen and (max-width: 576px){
+    /* Make .section-navbar responsive */
     nav{
         flex-direction: column;
     }
@@ -343,10 +345,11 @@ nav{
     .nav-item li{
         margin-bottom: 20px;
     }
+    /* Make .section-banner responsive */
     .banner-section{
         flex-direction: column-reverse;
         justify-content: center;
-        background-position-y: bottom;
+        background-position: bottom left;
     }
 
     .banner-image img{
@@ -359,8 +362,9 @@ nav{
         margin-bottom: 20px;
     }
     .funny-video-content{
-        grid-template-columns: repeat(1,1fr);
-        margin: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 20px 10px;
     }
     .content-card{
         width: 100%; 
@@ -379,30 +383,45 @@ nav{
         height: 50px;
     }
 
-    .section-play{
-        flex-direction: column-reverse;
-        margin: 10px;
+    /* Make .section-play responsive */
+    .section-play {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
         padding: 20px;
     }
-    .play-content{
+    
+    .play-content {
         margin-right: 0px;
         padding: 10px;
         text-align: center;
     }
-    .badge-image{
-        width: 13rem;
+    
+    .play-content h3 {
+        font-size: 1.8rem;
+    }
+    
+    .play-img {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .badge-image {
+        width: 100px;
         position: relative;
-        bottom: 12rem;
-        right: 6rem;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+        bottom: -60px;
+        right: 86%;
+        margin-bottom: 20px;
+        padding-bottom: 0;
     }
-    .play-img{
-        width: 23rem;
-    }
+    /* Make .section-game-type responsive */
     .section-game-type{
         padding: 20px;
     }
+    /* Make .section-footer responsive */
     footer{
         padding: 120px;
     }
@@ -420,6 +439,7 @@ nav{
 
 @media screen and (min-width: 576px) and (max-width: 960px){
 
+    /* Make .section-nav responsive */
     nav{
         flex-direction: column;
     }
@@ -436,21 +456,16 @@ nav{
     .nav-item li{
         margin-bottom: 20px;
     }
+    /* Make .section-banner responsive */
     .banner-section{
         flex-direction: column-reverse;
         justify-content: center;
         background-position-y: bottom;
     }
-    /* .banner-content h3{
-        font-size: 2rem;
-    }
-    .banner-content h1{
-        font-size: 3.9375rem;
-    } */
+
     .banner-image img{
         text-align: center;
         width: calc(100% - 20%);
-        /* padding: 30px; */
         margin: 20px 10%;
     }
     .banner-content{
@@ -477,29 +492,42 @@ nav{
         height: 60px;
     }
     
-    .section-play{
-        flex-direction: column-reverse;
+    /* Make .section-play responsive */
+    .section-play {
+        flex-direction: column;
         margin: 10px;
-        padding: 20px;
-        text-align: center;
+        padding: 20px 0px 20px 20px;
     }
-    .play-content{
-        margin-right: 0px;
+    
+    .play-content {
+        margin-right: 0;
         padding: 10px;
         text-align: center;
     }
-    .badge-image{
-        width: 13rem;
-        position: relative;
-        bottom: 12rem;
-        right: 6rem;
-        /* margin-bottom: 0px;
-        padding-bottom: 0px; */
+    
+    .play-content h3 {
+        font-size: 1.8rem;
     }
+    
+    .play-img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .badge-image {
+        width: 100px;
+        position: relative;
+        bottom: -60px;
+        right: 88%;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    /* Make .section-game-type responsive */
     .section-game-type{
         padding: 20px;
     }
-
+    /* Make .section-footer responsive */
     .footer-nav,.footer-icon,.footer-others,.copyright{
         flex-wrap: wrap;
     }
