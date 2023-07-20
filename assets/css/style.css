@@ -363,6 +363,7 @@ nav{
         flex-direction: column-reverse;
         justify-content: center;
         background-position: bottom left;
+        padding: 20px;
     }
 
     .banner-image img{
@@ -440,7 +441,7 @@ nav{
     }
     /* Make .section-footer responsive */
     footer{
-        padding: 120px;
+        padding: 20px;
     }
     .footer-nav,.footer-icon,.footer-others,.copyright{
         flex-wrap: wrap;
@@ -478,6 +479,7 @@ nav{
         flex-direction: column-reverse;
         justify-content: center;
         background-position-y: bottom;
+        padding: 30px;
     }
 
     .banner-image img{
@@ -554,6 +556,7 @@ nav{
     }
     .footer{
         height: auto;
+        padding: 30px;
     }
     
 }
